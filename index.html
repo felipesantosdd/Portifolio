@@ -10,15 +10,16 @@
 <body>
 
     <header id="header">
-        <a href="#home" class="logo"> <span>King </span> <span style="font-size: 10px;">in</span><span style="border: 1px;"> Black</span> </a>
+        <a href="#" class="logo"> <span>King </span> <span style="font-size: 10px;">in</span><span style="border: 1px;"> Black</span> </a>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#portifolio">Portifolio</a></li>
-            <li><a href="#equipe">Equipe</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#home" onclick="toggle()">Home</a></li>
+            <li><a href="#sobre" onclick="toggle()">Sobre</a></li>
+            <li><a href="#habilidades" onclick="toggle()">Habilidades</a></li>
+            <li><a href="#portifolio" onclick="toggle()">Portifolio</a></li>
+            <li><a href="#equipe" onclick="toggle()">Equipe</a></li>
+            <li><a href="#contato" onclick="toggle()">Contato</a></li>
         </ul>
+        <div class="toggle" onclick="toggle()"></div>
     </header>
 
     <!--Meu Comentario 02-->
@@ -243,7 +244,7 @@
             </div><!--content-->
         </section><!--Team-->
 
-        <section class="sec work" id="contato">
+        <section class="sec contato" id="contato">
             <div class="content">
                 <div class="mxw800p">
                     <h3>Envie-nos Uma Mensagem </h3>
@@ -267,7 +268,7 @@
                         </div><!--row100-->
                         <div class="row100">
                             <div class="inputBx100">
-                                <input type="submit" value="send">
+                                <input type="submit" value="Enviar">
                             </div><!--inputBx100-->
                         </div><!--row100-->
                     </form>
@@ -280,14 +281,19 @@
                         <li><a href="#"><img src="/img/linkedin.png" alt=""></a></li>
                     </ul>
                 </div><!--sci-->
+                <p class="copyright">Design & Desenvolvimento por <a href="#">King in Black</a></p>
             </div><!--content-->
         </section><!--Team-->
-
     <script type="text/javascript">
         window.addEventListener("scroll", function(){
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
         })
+        function toggle(){
+            var header = document.querySelector("header");
+            header.classList.toggle("active")
+            
+        }
     </script>
 </body>
 </html>
