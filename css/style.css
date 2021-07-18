@@ -620,4 +620,10 @@ margin-top: -250px;
     {
         margin: 20px;
     }
+
+    .statsBox
+{
+    display: inline-block;
+    margin: 0 auto;
+}
 }
