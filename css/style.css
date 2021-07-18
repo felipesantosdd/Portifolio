@@ -581,6 +581,7 @@ margin-top: -250px;
     .banner
     {
         background-position: center;
+        text-align: center;
     }
 
     .banner h2
