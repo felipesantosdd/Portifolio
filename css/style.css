@@ -623,7 +623,7 @@ margin-top: -250px;
 
     .statsBox
 {
-    display: inline-block;
+    display: grid;
     margin: 0 auto;
 }
 }
