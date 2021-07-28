@@ -16,6 +16,7 @@
             <li><a href="#sobre" onclick="toggle()">Sobre</a></li>
             <li><a href="#habilidades" onclick="toggle()">Habilidades</a></li>
             <li><a href="#portifolio" onclick="toggle()">Portifolio</a></li>
+            <li><a href="#team" onclick="toggle()">Equipe</a></li>
             <li><a href="#contato" onclick="toggle()">Contato</a></li>
         </ul>
         <div class="toggle" onclick="toggle()"></div>
@@ -26,7 +27,12 @@
     <!--Banner-->
 
     <section class="banner" id="home">
+   <div class="overlay">
     <h2><span>Soluções</span><br>Para seu Negocio</h2>
+   </div>
+    <video id="videoBG" autoplay muted loop>
+        <source src="/img/BG01.mp4" type="video/mp4">
+    </video>
     <!--Fim do Baner-->
     </section>
         <!-- Home -->
@@ -143,24 +149,55 @@
 
                 <div class="workBx">
                     <div class="brand">
-                        <a href="https://kinginblack.netlify.app/#home"><h2>King In Black</h2></a>
+                        <a href="https://kinginblack.netlify.app/#home" target="_blank"><img src="/img/King.png" alt=""> <h2>King in Black</h2></a>
                     </div><!--brand-->
 
                     <div class="brand">
-                        <a href="https://ateliedianealmeida.netlify.app" target="_blank"><h2>Atelie Diane Almeida</h2></a>
+                        <a href="https://ateliedianealmeida.netlify.app" target="_blank"> <img src="/img/Diane.png" alt=""> <h2>Atelie Diane Almeida</h2></a>
                     </div><!--brand-->
 
                     <div class="brand">
-                        <a href="#"><h2>Moura</h2></a>
+                        <a href="https://www.moura.com.br" target="_blank"> <img src="/img/Moura.png" alt=""><h2>Moura</h2></a>
                     </div><!--brand-->
 
                     <div class="brand">
-                        <a href="#"><h2>Itacaité Fm</h2></a>
+                        <a href="https://fogodechao.com.br" target="_blank"><img src="/img/Fogo.png" alt=""><h2>Fogo de Chão</h2></a>
                     </div><!--brand-->
                      
                 </div><!--workBx-->
             </div><!--content-->
         </section><!--portifolio-->
+
+        <section class="sec team" id="team">
+            <div class="content">
+              <div class="mxw800p">
+                <h3>Nossos Expecialistas</h3>
+                <p>Nossos Profissionais estão prontos para atende-lo.</p>
+              </div>
+              <div class="teamBx">
+                <div class="member">
+                  <div class="imgBx">
+                    <img src="/img/01.png">
+                  </div>
+                  <div class="details">
+                    <div>
+                      <h2>Felipe S. Oliver<br><span>Desenvolvedor Front-End</span></h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="member">
+                  <div class="imgBx">
+                    <img src="/img/02.jpg">
+                  </div>
+                  <div class="details">
+                    <div>
+                      <h2>Raquel Felix<br><span>Diretora de Marketing</span></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
         <section class="sec contato" id="contato">
             <div class="content">
